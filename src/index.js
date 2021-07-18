@@ -38,7 +38,7 @@ const MORSE_TABLE = {
 };
 
 function decode(expr) {
-  function decode(expr) {
+
     const arr = expr.split('')
     const okey = Object.keys(MORSE_TABLE)
     const oval = Object.values(MORSE_TABLE)
@@ -64,7 +64,7 @@ function decode(expr) {
       }
     }
     return marr.join('')
-  }
+ 
     // write your solution here
 }
 
