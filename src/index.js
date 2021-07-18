@@ -45,11 +45,11 @@ function decode(expr) {
     let acc = ''
     let sarr = []
     let marr = []
-    console.log(oval)
+ 
     for (let i = 0; i < arr.length; i++) {
       acc += arr[i]
       if (((i + 1) % 10) === 0) {
-        console.log('acc', acc, acc.indexOf('1'))
+
         sarr[sarr.length] = acc.substring(acc.indexOf('1')).
           replace(/10/g, '.').replace(/11/g, '-').replace(/\*\*\*\*\*\*\*\*\*\*/g, ' ')
         acc = ''
@@ -65,7 +65,6 @@ function decode(expr) {
     }
     return marr.join('')
  
-    // write your solution here
 }
 
 module.exports = {
